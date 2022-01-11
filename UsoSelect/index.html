@@ -29,7 +29,28 @@
             <option value="CSS"></option>
             <option value="Angular"></option>
         </datalist>
-       
+        <h3>Inpunt tipo "submit" versus "button"</h3>
+        <h4>Submit</h4>
+        <p>Lo recomendable es usarlo en momentos en los que llegues a usar el enviar ya que por defecto vienen como
+            "enviar" por que si lo puedes cambiar el nombre de "enviar" con el atributo value="nombre"</p>
+        <form>
+            <label for="colorFav">
+                <span>Escribe aqui tu color favorito</span>
+                <input type="text" name="colorFav" id="colorFav" placeholder="ejm: rojo" required>
+            </label>
+            <input type="submit">
+
+        </form>
+        <h4>Button</h4>
+        <p>Lo mejor es usarlo en formularios en los cuales te pida otro nombre, ya que al desde que defines la etiqueta
+            ya defines su nombre</p>
+        <form>
+            <label for="animalFav">
+                <span>Escribe aqui tu Animal favorito</span>
+                <input type="text" name="animalFav" id="animalFav" placeholder="ejm: Leon" required>
+            </label>
+            <button type="button">Enviame</button>
+        </form>
     </main>
 
 </body>
